@@ -1,0 +1,21 @@
+.wrapper {
+  display: block;
+  width: 36px;
+  height: 20px;
+  border-radius: 1000px;
+  border: none;
+  padding: 4px;
+  /* border: 1px solid white; */
+  background-color: grey;
+  cursor: pointer;
+  box-sizing: content-box;
+  outline-offset: 6px;
+}
+
+.ball {
+  display: block;
+  height: 100%;
+  aspect-ratio: 1/1;
+  background-color: white;
+  border-radius: 1000px;
+}
