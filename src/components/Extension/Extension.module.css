@@ -3,3 +3,9 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+
+.wrapper2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
