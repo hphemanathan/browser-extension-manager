@@ -5,9 +5,10 @@ import Extension from '../Extension/Extension';
 
 
 function Extensions() {
+  const [item, setItem] = React.useState(data)
   return <div>
     {
-data.map(({logo, name, description, isActive})=> 
+item.map(({logo, name, description, isActive})=> 
 <Extension key={logo} logo={logo} name={name} description={description} isActive={isActive}/>
 )
     }
