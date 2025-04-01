@@ -9,7 +9,7 @@ function Extensions() {
   return <div>
     {
 item.map(({logo, name, description, isActive})=> 
-<Extension key={logo} logo={logo} name={name} description={description} isActive={isActive}/>
+<Extension item={item} setItem={setItem} key={logo} logo={logo} name={name} description={description} isActive={isActive}/>
 )
     }
   </div>;
