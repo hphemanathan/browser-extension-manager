@@ -4,8 +4,8 @@ import Extension from '../Extension/Extension';
 
 
 
-function Extensions() {
-  const [item, setItem] = React.useState(data)
+function Extensions({item, setItem}) {
+  
   return <div>
     {
 item.map(({logo, name, description, isActive})=> 

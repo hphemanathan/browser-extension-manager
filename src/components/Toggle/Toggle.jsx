@@ -1,18 +1,15 @@
 import React from 'react';
 import style from "./Toggle.module.css";
 
-function Toggle({isEnabled, setIsEnabled, value}) {
+function Toggle({ item, setItem, isEnabled, setIsEnabled, value }) {
   return (
-    
     <div>
       <button
-      onClick={() =>{
-        const nextIsEnabled = !isEnabled;
-        setIsEnabled(nextIsEnabled)
-      }
-      
-      }
-      
+        onClick={() => {
+          const nextIsEnabled = !isEnabled;
+          setIsEnabled(nextIsEnabled);
+          console.log(!isEnabled ? "true" : "false");
+        }}
         type='button'
         role='switch'
         className={isEnabled ? style.wrapperActive : style.wrapper}>

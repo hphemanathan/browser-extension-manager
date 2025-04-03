@@ -1,7 +1,12 @@
+.container {
+  background-color: var(--card-background);
+}
+
 .wrapper {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  /* background-color: white; */
 }
 
 .wrapper2 {

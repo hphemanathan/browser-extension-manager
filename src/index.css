@@ -1,7 +1,19 @@
 :root {
   --spacing: 8px;
+  --background: linear-gradient(#ebf2fc, #eefbf9);
+  --text: hsl(226, 11%, 37%);
+  --card-background: hsl(200, 60%, 99%);
+}
+
+[data-theme="dark"] {
+  --background: linear-gradient(#04091b, #091540);
+  --text: hsl(0, 0%, 78%);
+  --card-background: hsl(226, 25%, 17%);
 }
 
 body {
-  /* background-color: red; */
+  background-image: var(--background);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--text);
 }

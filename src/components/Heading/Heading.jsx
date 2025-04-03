@@ -4,11 +4,11 @@ import Button from '../Button/Button';
 import styles from "./Heading.module.css"
 
 
-function Heading() {
+function Heading({ item, setItem }) {
   return (
     <div className={styles.wrapper}>
       <h1>Extensions List</h1>
-      <FilterButton/>
+      <FilterButton item={item} setItem={setItem} />
     </div>
   );
 }
