@@ -8,7 +8,9 @@ function Toggle({ item, setItem, isEnabled, setIsEnabled, value }) {
         onClick={() => {
           const nextIsEnabled = !isEnabled;
           setIsEnabled(nextIsEnabled);
-          console.log(!isEnabled ? "true" : "false");
+          console.log(!isEnabled ? 
+            
+            "true" : "false");
         }}
         type='button'
         role='switch'
