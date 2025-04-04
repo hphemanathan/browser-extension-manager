@@ -23,11 +23,13 @@ const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light
 
   return (
     
+    <div className={styles.body} data-theme={theme}>
     <main className={styles.container} data-theme={theme}>
      <Header switchTheme={switchTheme} value={defaultDark} theme={theme} setTheme={setTheme} item={item} setItem = {setItem}/>
      <Heading item={item} setItem = {setItem}/>
      <Extensions item={item} setItem = {setItem}/>
     </main>
+    </div>
     
   )
 }

@@ -4,3 +4,8 @@
   padding-inline: calc(var(--spacing) * 2);
   color: var(--text);
 }
+
+.body {
+  background-image: var(--background);
+  min-height: 100%;
+}
